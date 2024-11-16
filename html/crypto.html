@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Pools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Crypto Investment Pools</h1>
+    </header>
+    <main>
+        <div class="pool" id="bitcoin">
+            <h2>Bitcoin </h2>
+            <p>Investment per unit: $100</p>
+            <div class="graph">
+                <div class="bar" style="width: 0%;" id="bitcoin-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="bitcoin-returns">200%</span></p>
+            <button class="invest-btn" onclick="invest('bitcoin')">Invest</button>
+        </div>
+
+        <div class="pool" id="ethereum">
+            <h2>Ethereum </h2>
+            <p>Investment per unit: $50</p>
+            <div class="graph">
+                <div class="bar" style="width: 10%;" id="ethereum-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="ethereum-returns">190%</span></p>
+            <button class="invest-btn" onclick="invest('ethereum')">Invest</button>
+        </div>
+
+        <div class="pool" id="dogecoin">
+            <h2>Dogecoin </h2>
+            <p>Investment per unit: $10</p>
+            <div class="graph">
+                <div class="bar" style="width: 50%;" id="dogecoin-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="dogecoin-returns">150%</span></p>
+            <button class="invest-btn" onclick="invest('dogecoin')">Invest</button>
+        </div>
+        <div class="pool" id="litecoin">
+            <h2>Litecoin </h2>
+            <p>Investment per unit: $60</p>
+            <div class="graph">
+                <div class="bar" style="width: 50%;" id="litecoin-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="litecoin-returns">150%</span></p>
+            <button class="invest-btn" onclick="invest('litecoin')">Invest</button>
+        </div>
+        
+        <div class="pool" id="ripple">
+            <h2>Ripple </h2>
+            <p>Investment per unit: $20</p>
+            <div class="graph">
+                <div class="bar" style="width: 50%;" id="ripple-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="ripple-returns">150%</span></p>
+            <button class="invest-btn" onclick="invest('ripple')">Invest</button>
+        </div>
+        
+        <div class="pool" id="cardano">
+            <h2>Cardano </h2>
+            <p>Investment per unit: $40</p>
+            <div class="graph">
+                <div class="bar" style="width: 50%;" id="cardano-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="cardano-returns">150%</span></p>
+            <button class="invest-btn" onclick="invest('cardano')">Invest</button>
+        </div>
+        
+        <div class="pool" id="polkadot">
+            <h2>Polkadot </h2>
+            <p>Investment per unit: $35</p>
+            <div class="graph">
+                <div class="bar" style="width: 50%;" id="polkadot-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="polkadot-returns">150%</span></p>
+            <button class="invest-btn" onclick="invest('polkadot')">Invest</button>
+        </div>
+        
+        <div class="pool" id="tron">
+            <h2>Tron </h2>
+            <p>Investment per unit: $15</p>
+            <div class="graph">
+                <div class="bar" style="width: 50%;" id="tron-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="tron-returns">150%</span></p>
+            <button class="invest-btn" onclick="invest('tron')">Invest</button>
+        </div>
+        
+        <div class="pool" id="solana">
+            <h2>Solana </h2>
+            <p>Investment per unit: $90</p>
+            <div class="graph">
+                <div class="bar" style="width: 50%;" id="solana-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="solana-returns">150%</span></p>
+            <button class="invest-btn" onclick="invest('solana')">Invest</button>
+        </div>
+        
+        <div class="pool" id="chainlink">
+            <h2>Chainlink </h2>
+            <p>Investment per unit: $70</p>
+            <div class="graph">
+                <div class="bar" style="width: 50%;" id="chainlink-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="chainlink-returns">150%</span></p>
+            <button class="invest-btn" onclick="invest('chainlink')">Invest</button>
+        </div>
+        
+        <div class="pool" id="stellar">
+            <h2>Stellar </h2>
+            <p>Investment per unit: $25</p>
+            <div class="graph">
+                <div class="bar" style="width: 50%;" id="stellar-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="stellar-returns">150%</span></p>
+            <button class="invest-btn" onclick="invest('stellar')">Invest</button>
+        </div>
+        
+        <div class="pool" id="vechain">
+            <h2>VeChain </h2>
+            <p>Investment per unit: $10</p>
+            <div class="graph">
+                <div class="bar" style="width: 50%;" id="vechain-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="vechain-returns">150%</span></p>
+            <button class="invest-btn" onclick="invest('vechain')">Invest</button>
+        </div>
+        
+        <div class="pool" id="cosmos">
+            <h2>Cosmos </h2>
+            <p>Investment per unit: $50</p>
+            <div class="graph">
+                <div class="bar" style="width: 50%;" id="cosmos-bar">Investments ratio</div>
+            </div>
+            <p>Expected Return: <span class="returns" id="cosmos-returns">150%</span></p>
+            <button class="invest-btn" onclick="invest('cosmos')">Invest</button>
+        </div>
+    </main>
+    <div class="navbar">
+        <a class="" href="index.html">Homepage</a>
+        <a href="crypto.html">Crypto</a>
+        <a href="account.html">Account</a>
+      
+      </div>
+
+    <script src="crypto.js"></script>
+</body>
+</html>

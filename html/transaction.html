@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Transaction Portal</h1>
+    </header>
+    <main>
+        <div class="transaction-card" id="user1">
+            <h2>Name: John Doe</h2>
+            <p>Email: john.doe@example.com</p>
+            <p>Transaction Limits:</p>
+            <ul>
+                <li>USDT: 1,000</li>
+                <li>Ksh: 150,000</li>
+            </ul>
+            <div class="input-group">
+                <label for="transaction-user1">Amount to Transact:</label>
+                <input type="number" id="transaction-user1" placeholder="Enter amount">
+            </div>
+            <div class="input-group">
+                <label for="payment-method-user1">Select Payment Method:</label>
+                <select id="payment-method-user1">
+                    <option value="binance">Binance</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="mpesa">M-Pesa</option>
+                </select>
+            </div>
+            <div class="transaction-buttons">
+                <button class="recharge-btn" onclick="recharge('user1')">Recharge</button>
+                <button class="withdraw-btn" onclick="withdraw('user1')">Withdraw</button>
+            </div>
+        </div>
+
+        <div class="transaction-card" id="user2">
+            <h2>Name: Jane Smith</h2>
+            <p>Email: jane.smith@example.com</p>
+            <p>Transaction Limits:</p>
+            <ul>
+                <li>USDT: 500</li>
+                <li>Ksh: 75,000</li>
+            </ul>
+            <div class="input-group">
+                <label for="transaction-user2">Amount to Transact:</label>
+                <input type="number" id="transaction-user2" placeholder="Enter amount">
+            </div>
+            <div class="input-group">
+                <label for="payment-method-user1">Select Payment Method:</label>
+                <select id="payment-method-user1">
+                    <option value="binance">Binance</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="mpesa">M-Pesa</option>
+                </select>
+            </div>
+            <div class="transaction-buttons">
+                <button class="recharge-btn" onclick="recharge('user2')">Recharge</button>
+                <button class="withdraw-btn" onclick="withdraw('user2')">Withdraw</button>
+            </div>
+        </div>
+
+        <div class="transaction-card" id="user3">
+            <h2>Name: Alice Johnson</h2>
+            <p>Email: alice.johnson@example.com</p>
+            <p>Transaction Limits:</p>
+            <ul>
+                <li>USDT: 2,000</li>
+                <li>Ksh: 300,000</li>
+            </ul>
+            <div class="input-group">
+                <label for="transaction-user3">Amount to Transact:</label>
+                <input type="number" id="transaction-user3" placeholder="Enter amount">
+            </div>
+            <div class="input-group">
+                <label for="payment-method-user1">Select Payment Method:</label>
+                <select id="payment-method-user1">
+                    <option value="binance">Binance</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="mpesa">M-Pesa</option>
+                </select>
+            </div>
+            <div class="transaction-buttons">
+                <button class="recharge-btn" onclick="recharge('user3')">Recharge</button>
+                <button class="withdraw-btn" onclick="withdraw('user3')">Withdraw</button>
+            </div>
+        </div>
+            <div class="transaction-card" id="user1">
+                <h2>Name: John Doe</h2>
+                <p>Email: john.doe@example.com</p>
+                <p>Transaction Limits:</p>
+                <ul>
+                    <li>USDT: 1,000</li>
+                    <li>Ksh: 150,000</li>
+                </ul>
+                <div class="input-group">
+                    <label for="transaction-user1">Amount to Transact:</label>
+                    <input type="number" id="transaction-user1" placeholder="Enter amount">
+                </div>
+                <div class="input-group">
+                    <label for="payment-method-user1">Select Payment Method:</label>
+                    <select id="payment-method-user1">
+                        <option value="binance">Binance</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="mpesa">M-Pesa</option>
+                    </select>
+                </div>
+                <div class="transaction-buttons">
+                    <button class="recharge-btn" onclick="recharge('user1')">Recharge</button>
+                    <button class="withdraw-btn" onclick="withdraw('user1')">Withdraw</button>
+                </div>
+           
+        </div>
+    </main>
+        <div class="navbar">
+            <a class="" href="index.html">Homepage</a>
+            <a href="crypto.html">Crypto</a>
+            <a href="account.html">Account</a>
+          
+          </div>
+</body>
+</html>
